@@ -1,11 +1,11 @@
 import React from 'react';
-
 import './App.css';
+import Stopwatch from './components/stopwatch.component'
 
 function App() {
   return (
     <div className="App">
-      <p>hello world!</p>
+      <Stopwatch />
     </div>
   );
 }

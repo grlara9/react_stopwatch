@@ -5,7 +5,7 @@ class Stopwatch extends Component{
     render() {
         return (
             <div>
-                
+                <p>Si se iso</p>
             </div>
         )
     }
