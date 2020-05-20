@@ -38,8 +38,8 @@ class Stopwatch extends Component{
         render() {
             return (
                 <div>
-                <button className="btn btn-warning btn-block" onClick={this.handleStartStop}>{this.state.isRunning?" style={{backgroundColor:this.state.bgColor}} Stop":"Start"}</button>
-                <button onClick={this.reset}>Reset</button>
+                <button  className={this.state.isRunning? "btn btn-danger btn-block": "btn btn-success btn-block"} onClick={this.handleStartStop}>{this.state.isRunning? "Stop":"Start"}</button>
+                <button className="btn btn-warning btn-block" onClick={this.reset}>Reset</button>
             </div>
         )
     }
