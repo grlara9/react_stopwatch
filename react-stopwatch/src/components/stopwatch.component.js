@@ -28,13 +28,17 @@ class Stopwatch extends Component{
                 }, 10)
             }        
         }
-        
+
+        changeColor = () => {
+            return {bgColor: 'red'}
+        }
+
         
         
         render() {
             return (
                 <div>
-                <button onClick={this.handleStartStop}>{this.state.isRunning?"Stop":"Start"}</button>
+                <button className="btn btn-warning btn-block" onClick={this.handleStartStop}>{this.state.isRunning?" style={{backgroundColor:this.state.bgColor}} Stop":"Start"}</button>
                 <button onClick={this.reset}>Reset</button>
             </div>
         )
