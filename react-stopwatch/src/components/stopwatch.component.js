@@ -28,22 +28,24 @@ class Stopwatch extends Component{
                 }, 10)
             }        
         }
-
-        changeColor = () => {
-            return {bgColor: 'red'}
-        }
-
+         reset = ()=> {
+             this.setState({
+                 timerTime:0,
+                 timerStart:0
+             })
+         }
         
         
-        render() {
-            return (
-                <div>
-                <button  className={this.state.isRunning? "btn btn-danger btn-block": "btn btn-success btn-block"} onClick={this.handleStartStop}>{this.state.isRunning? "Stop":"Start"}</button>
+    render() {
+        return (
+            <div>
+                <button  className={this.state.isRunning? "btn btn-danger btn-block": "btn btn-success btn-block"}
+                 onClick={this.handleStartStop}>{this.state.isRunning? "Stop":"Start"}
+                 </button>
                 <button className="btn btn-warning btn-block" onClick={this.reset}>Reset</button>
             </div>
         )
     }
 }
-
 export default Stopwatch;
 
