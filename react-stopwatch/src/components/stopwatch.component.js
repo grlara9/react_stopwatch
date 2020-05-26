@@ -48,7 +48,16 @@ class Stopwatch extends Component{
                 <div className="counter">
                     <div className="time">
                         <div className="time-value">
-                            {hours}:{minutes}:{seconds}:{milliseconds}
+                            {hours}:
+                        </div>
+                        <div className="time-value">
+                            :{minutes}:
+                        </div>
+                        <div className="time-value">
+                           {seconds}:
+                        </div>
+                        <div className="time-value">
+                            {milliseconds}
                         </div>
                     </div> 
                 </div>

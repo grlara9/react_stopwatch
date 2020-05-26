@@ -8,17 +8,16 @@ body {
   background-color: #3535A2
 }
 .counter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 70%;
-  margin: 100px auto;
-  padding: 10px;
-  background: white
+  width: 100%;
+    background: red;
+    margin: 100px auto;
+    position: relative;
+
 } 
 
 .counter .time {
-  margin-right: 30px;
+  padding: 60px 0px;
+  text-align: center;
 }
 
 .counter .time-value {
