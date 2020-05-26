@@ -45,8 +45,14 @@ class Stopwatch extends Component{
         
         return (
             <div>
-                {hours}:{minutes}:{seconds}
-                <button  className={this.state.isRunning? "btn btn-danger btn-block": "btn btn-success btn-block"}
+                <div className="counter">
+                    <div className="time">
+                        <div className="time-value">
+                            {hours}:{minutes}:{seconds}
+                        </div>
+                    </div> 
+                </div>
+                <button  className={this.state.isRunning? "btn btn-danger btn-block": "btn btn-outline-primary"}
                  onClick={this.handleStartStop}>{this.state.isRunning? "Stop":"Start"}
                  </button>
                 <button className="btn btn-warning btn-block" onClick={this.reset}>Reset</button>
@@ -55,4 +61,4 @@ class Stopwatch extends Component{
     }
 }
 export default Stopwatch;
-
+ 
