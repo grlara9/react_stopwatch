@@ -60,11 +60,11 @@ class Stopwatch extends Component{
                             {milliseconds}
                         </div>
                     </div> 
-                </div>
                 <button  className={this.state.isRunning? "btn btn-outline-danger btn-lg btn-block": "btn btn-outline-success btn-lg btn-block"}
                  onClick={this.handleStartStop}>{this.state.isRunning? "Stop":"Start"}
                  </button>
                 <button className="btn btn-outline-warning btn-sm btn-block" onClick={this.reset}>Reset</button>
+                 </div>
             </div>
         )
     }
