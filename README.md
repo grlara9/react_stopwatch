@@ -1,4 +1,5 @@
 # react_stopwatch
 
-![start](client/src/images/start.png)
-![stop](client/src/images/stop.png)
+![start](react-stopwatch/src/images/start.png)
+
+![stop](react-stopwatch/src/images/stop.png)
